@@ -1,9 +1,9 @@
 {
-    "name": "@rrain/ts-utils",
+    "name": "@rrainpath/ts-utils",
     "version": "0.1.0",
     "description": "Utility TypeScript functions & types",
     "main": "dist/index.js",
-    "types": "dest/index.d.ts",
+    "types": "dist/index.d.ts",
     "scripts": {
         "test": "mocha --reporter spec",
         "build": "tsc"

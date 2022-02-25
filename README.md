@@ -1,4 +1,4 @@
-# @rrain/ts-utils
+# @rrainpath/ts-utils
 Utility TypeScript functions &amp; types.
 Contains: inRange, StringBuilder, isEmpty, nonEmpty
 
@@ -30,7 +30,7 @@ r = inRange(49,49.999,a) // => 49.999
 
 ```
 let sb = new StringBuilder('some string')
-let s = sb.replace(0,5,'awesome').replaceLen(8,1,'S').append("Builder").toString() // => awesome StringBuilder
+let s = sb.replace(0,4,'awesome').replaceLen(8,1,'S').append("Builder").toString() // => awesome StringBuilder
 ```
 
 StringBuilder methods:
