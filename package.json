@@ -1,0 +1,33 @@
+{
+    "name": "@rrain/ts-utils",
+    "version": "0.1.0",
+    "description": "Utility TypeScript functions & types",
+    "main": "dist/index.js",
+    "types": "dest/index.d.ts",
+    "scripts": {
+        "test": "mocha --reporter spec",
+        "build": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/RainFourth/ts-utils.git"
+    },
+    "keywords": [
+        "ts",
+        "TypeScript",
+        "utilities",
+        "util",
+        "utils"
+    ],
+    "author": "'rRain' <rrainpath@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/RainFourth/ts-utils/issues"
+    },
+    "homepage": "https://github.com/RainFourth/ts-utils#readme",
+    "devDependencies": {
+        "chai": "^4.3.6",
+        "mocha": "^9.2.1",
+        "typescript": "^4.5.5"
+    }
+}
