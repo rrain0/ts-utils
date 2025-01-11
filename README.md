@@ -4,7 +4,7 @@ Contains: inRange, StringBuilder, isEmpty, nonEmpty
 
 
 ## Install
-`npm i @rrain/ts-utils`
+`npm i @rrainpath/ts-utils`
 
 
 ## Usage

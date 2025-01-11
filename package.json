@@ -1,9 +1,42 @@
 {
     "name": "@rrainpath/ts-utils",
-    "version": "0.1.1",
+
+    "//type": "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-7.html#ecmascript-module-support-in-nodejs. 'type' can be set to either 'module' or 'commonjs'.",
+    "type": "module",
+
+    "//version": "this is already new version: prev is 0.1.1",
+    "version": "0.2.0",
     "description": "Utility TypeScript functions & types",
+
+    "exports": {
+        ".": {
+            "//note": "'types' must come first!!!",
+
+            "//import": "Entry-point for `import 'my-package'` in ESM",
+            "import": {
+                "//types": "Where TypeScript will look",
+                "types": "dist/index.d.ts",
+
+                "//default": "Where Node.js will look",
+                "default": "dist/index.js"
+            },
+
+            "//require": "Entry-point for `require('my-package') in CJS",
+            "require": {
+                "//types": "Where TypeScript will look",
+                "types": "dist/index.d.ts",
+
+                "//default": "Where Node.js will look",
+                "default": "dist/index.js"
+            }
+        }
+    },
+
+    "//main": "Fall-back for older versions of TypeScript",
     "main": "dist/index.js",
+    "//types": "CJS fall-back for older versions of Node.js",
     "types": "dist/index.d.ts",
+
     "scripts": {
         "test": "mocha --reporter spec",
         "build": "tsc"
@@ -19,7 +52,7 @@
         "util",
         "utils"
     ],
-    "author": "'rRain' <rrainpath@gmail.com>",
+    "author": "'rrain' <rrainpath@gmail.com>",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/RainFourth/ts-utils/issues"
@@ -28,6 +61,6 @@
     "devDependencies": {
         "chai": "^4.3.6",
         "mocha": "^9.2.1",
-        "typescript": "^4.5.5"
+        "typescript": "^4.9.3"
     }
 }

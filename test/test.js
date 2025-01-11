@@ -5,15 +5,15 @@ const index = require('../dist/index.js')
 
 describe('inRange function test', () => {
     it('should return 0', () => {
-        const result = index.inRange(0,100,-1)
+        const result = index.fitRange(0,-1,100)
         expect(result).to.equal(0)
     })
     it('should return 50', () => {
-        const result = index.inRange(0,100,50)
+        const result = index.fitRange(0,50,100)
         expect(result).to.equal(50)
     })
     it('should return 100', () => {
-        const result = index.inRange(0,100,200)
+        const result = index.fitRange(0,200,100)
         expect(result).to.equal(100)
     })
 })

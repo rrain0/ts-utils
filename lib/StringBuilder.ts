@@ -1,7 +1,7 @@
 
 
 // todo store array of code points (integer numbers) (symbol number in unicode table)
-// todo wtf code: dsb.replace(e-1,e,String.fromCodePoint(dsb.charAt(e-1).codePointAt(0)+1))
+// todo wtf code: dsb.replace(e-1,e,String.fromCodePoint(dsb.charAt(e-1).codePointAt(0)+1)) - увеличить последний символ на 1
 
 
 
@@ -18,20 +18,30 @@ export class StringBuilder{
         else this.clear()
     }
 
-    first(str: string){
+    /**
+     * Insert into begin of string
+     */
+    placeFirst(str: string){
         this.chars = [...str, ...this.chars]
         return this
     }
 
+    /**
+     * Insert into end of string
+     */
     append(str: string){
         this.chars = [...this.chars, ...str]
         return this
     }
 
+    /**
+     * Insert into string
+     */
     insert(idx: number, str: string){
         this.chars.splice(idx, 0, ...[...str])
         return this
     }
+
 
     remove(s: number, e?: number){
         if (e) this.chars.splice(s,e-s)
